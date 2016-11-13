@@ -35,15 +35,6 @@
         this.isEditing = false;
       }
 
-
-
-
-
-
-
-
-
-
 //============================================
 //CRUD logic
 
@@ -60,42 +51,32 @@ function addTodo(newTodo) {
     });
 }
 
+function deleteTodo(id) {
+  $http.delete(`/todos/${id}`)
+    .then(function(response) {
+      console.log(response);
+      self.todos = response.data.todos;
+    })
+}
+
+function editTodo(todo) {
+  $http.put(`/todos/${todo._id}`, todo)
+    .then(function(response){
+      console.log(response);
+      self.todos = response.data.todos;
+    })
+
+  this.isEditing = false;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      // PUBLIC METHODS
-
+      // public methods
       this.startCreating = startCreating;
       this.addTodo = addTodo;
-
-
-
-
-
-
-
+      this.startEditing = startEditing;
+      this.setTodoToEdit = setTodoToEdit;
+      this.editTodo = editTodo;
+      this.reset = reset;
   });
 })();

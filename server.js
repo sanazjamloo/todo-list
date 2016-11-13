@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(methodOverride('_method'));
 app.use(express.static(path.join(__dirname,'public')))
 
-// app.use('/todos', require('./controllers/todos.js'));
+app.use('/todos', require('./controllers/todos.js'));
 
 var mongoURI = 'mongodb://localhost/todos'
 
