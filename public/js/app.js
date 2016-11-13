@@ -31,6 +31,31 @@
 
 
 
+//============================================
+//CRUD logic
+
+function addTodo(newTodo) {
+
+  $http.post('/todos', newTodo)
+    .then(function(response) {
+      self.todos = response.data.todos; //reset the form so the user can add another todo
+
+      newTodo.description = '';
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
