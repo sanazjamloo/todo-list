@@ -10,6 +10,16 @@
       .catch(function(err) { // catch the error if one happens
         console.log(err)
       });
+//=========================================
+//keeping track of app states
+      this.isCreating = false;
+      this.isEditing = false;
+      this.editedTodo = null;
+
+      function startCreating() {
+        this.isCreating = true;
+        this.isEditing = false;
+      }
 
 
 
@@ -26,6 +36,22 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+      // PUBLIC METHODS
+
+      this.startCreating = startCreating;
+      this.addTodo = addTodo;
 
 
 
