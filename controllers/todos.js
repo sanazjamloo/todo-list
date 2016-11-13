@@ -25,3 +25,66 @@ router.get('/:todoId', function(req, res){
       res.json(500, `ERROR: ${err}`)
     });
 });
+
+router.post('/', function(req, res){
+  var newToDo;
+
+  Todo.create({
+    description: req.body.description,
+    done: req.body.done || false,
+    createdAt: new Date(),
+    updatedAt: new Date()
+  })
+  .then(function(todo){
+    console.log('Created a Todo!', todo)
+    newTodo = todo;
+  })
+  .then(function(){
+    return Todo.find({}).exec();
+  })
+  .then(function(todos) {
+    console.log('All Todos', todos)
+
+    res.json({todos: todos, todo: newTodo});
+  })
+  .catch(function(err) {
+    res.json(400, err)
+  })
+});
+
+//update
+router.put('/:todoId', function(req, res) {
+  var editedTodo;
+
+  Todo.update({_id: req.params.todoId}, req.body)
+    .then(function() {
+      return Todo.find({}).exec();
+    })
+    .then(function(todos) {
+      console.log('All Todos', todos)
+
+      res.json({message: 'succesfully updated', todos: todos})
+    })
+    .catch(function(err) {
+      res.json(400, err)
+    });
+})
+
+router.delete('/:todoId', function(req, res){
+var todos;
+
+var query = Todo.remove({_id: req.params.todoId})
+  query.then(function() {
+    return Todo.find({}).exec();
+  })
+  .then(function(todos) {
+    console.log('All Todos', todos)
+
+    res.json({message: "succesfully deleted", todos: todos})
+  })
+  .catch(function(err) {
+    res.json(400, err)
+  });
+});
+
+module.exports = router;

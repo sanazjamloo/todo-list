@@ -74,6 +74,7 @@ function editTodo(todo) {
       // public methods
       this.startCreating = startCreating;
       this.addTodo = addTodo;
+      this.deleteTodo = deleteTodo;
       this.startEditing = startEditing;
       this.setTodoToEdit = setTodoToEdit;
       this.editTodo = editTodo;
