@@ -21,6 +21,19 @@
         this.isEditing = false;
       }
 
+      function startEditing() {
+        this.isCreating = false;
+        this.isEditing = true;
+      }
+
+       function setTodoToEdit(todo) {
+        this.editedTodo = todo;
+      }
+
+        function reset(todo) {
+        this.isCreating = false;
+        this.isEditing = false;
+      }
 
 
 
