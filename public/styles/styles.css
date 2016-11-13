@@ -1,0 +1,111 @@
+body {
+  background-image:url('http://www.sawyoo.com/postpic/2010/09/cool-notebook-paper-background_428773.jpg');
+  background-repeat:repeat-x;
+  background-size: cover;
+  font-family: 'Amatic SC', cursive;
+  color: #3c91da;
+}
+
+.header {
+  margin-top: 0%;
+  margin-bottom: 7%;
+  padding: 3%;
+  text-align: center;
+}
+
+h1 {
+  color: #035aa5;
+  font-size: 6em;
+  text-transform: uppercase;
+  text-shadow: 10px;
+
+}
+
+.todos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: -2%;
+}
+
+.todo {
+  margin-bottom: 5%;
+  color: #20598a;
+  font-size: 2.5em;
+  font-weight: 600;
+  line-height: 2em;
+  letter-spacing: .1rem;
+  text-transform: lowercase;
+}
+
+p {
+  margin: 0px
+}
+
+.nav {
+  text-align: center;
+  margin-bottom: -14%;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #4de6ca;
+  border-color: #5cb85c;
+  margin-bottom: -1%;
+  background-image: linear-gradient(to bottom,#05f3b1 0,#67abe6 100%);
+}
+
+.edit-form {
+  margin-bottom: -14%;
+  margin-top: -24%;
+}
+
+
+#edit-button {
+  background-color: #4de6ca;
+}
+
+/*Skeleton*/
+label {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600;
+  font-size: 2.5em;
+}
+
+/*Skeleton*/
+input {
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+/*Skeleton*/
+button {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  text-align: center;
+  color: #555;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box
+}
+
+form {
+  text-align: center;
+  margin-top: -19%;
+}
