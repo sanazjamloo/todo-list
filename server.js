@@ -5,6 +5,7 @@ mongoose.Promise   = global.Promise;
 var logger         = require('morgan');
 var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
+var mongoURI       = process.env.MONGODB_URI || 'mongodb://localhost/'
 
 var app = express();
 app.listen(process.env.PORT || 3000);
