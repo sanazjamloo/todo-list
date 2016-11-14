@@ -1,12 +1,14 @@
-var express = require('express');
-var path = require('path');
-var mongoose = require('mongoose');
-mongoose.Promise = global.Promise;
-var logger = require('morgan');
-var bodyParser = require('body-parser');
+var express        = require('express');
+var path           = require('path');
+var mongoose       = require('mongoose');
+mongoose.Promise   = global.Promise;
+var logger         = require('morgan');
+var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
 
 var app = express();
+app.listen(process.env.PORT || 3000);
+  console.log(' App is listening to the port 3000');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -24,8 +26,4 @@ app.get('/random-user', (req, res) => {
   var user = faker.helpers.userCard();
   user.avatar = faker.image.avatar();
   res.json(user)
-});
-
-app.listen(3000, function() {
-  console.log(' App is listening to the port 3000');
 });
