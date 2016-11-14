@@ -1,6 +1,6 @@
 body {
   background-image:url('http://www.sawyoo.com/postpic/2010/09/cool-notebook-paper-background_428773.jpg');
-  background-repeat:repeat-x;
+  background-repeat:repeat-y;
   background-size: cover;
   font-family: 'Amatic SC', cursive;
   color: #3c91da;
@@ -16,9 +16,7 @@ body {
 h1 {
   color: #035aa5;
   font-size: 6em;
-  text-transform: uppercase;
-  text-shadow: 10px;
-
+  text-shadow: 2px 2px #555;
 }
 
 .todos {
@@ -58,7 +56,7 @@ p {
 
 .edit-form {
   margin-bottom: -14%;
-  margin-top: -24%;
+  margin-top: 7%;
 }
 
 
@@ -83,6 +81,7 @@ input {
   border-radius: 4px;
   box-shadow: none;
   box-sizing: border-box;
+  font-size: 2em;
 }
 /*Skeleton*/
 button {
@@ -107,5 +106,5 @@ button {
 
 form {
   text-align: center;
-  margin-top: -19%;
+  margin-top: 7%;
 }
