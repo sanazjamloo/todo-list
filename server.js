@@ -5,7 +5,10 @@ mongoose.Promise   = global.Promise;
 var logger         = require('morgan');
 var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
-var mongoURI       = process.env.MONGODB_URI || 'mongodb://localhost/todo-list'
+var mongoURI       = process.env.MONGODB_URI || 'mongodb://localhost/todos'
+mongoose.connect(mongoURI);
+var mongoURI = 'mongodb://localhost/todos'
+
 
 var app = express();
 app.listen(process.env.PORT || 3000);
@@ -19,9 +22,7 @@ app.use(express.static(path.join(__dirname,'public')))
 
 app.use('/todos', require('./controllers/todos.js'));
 
-var mongoURI = 'mongodb://localhost/todos'
 
-mongoose.connect(mongoURI);
 
 app.get('/random-user', (req, res) => {
   var user = faker.helpers.userCard();
