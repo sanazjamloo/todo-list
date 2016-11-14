@@ -1,11 +1,11 @@
-#Todo-list
+#Todo list
 Full CRUD with Angular JS
 
 #About the Project
-What to do? Is a small MEAN stack Todo application with no authorization and authentication feature. A user can start listing their Todos without signing up. User of this application is able to add, edit, and remove their Todos.  
+What to do? is a small MEAN stack Todo application with no authorization and authentication feature. A user can start listing their Todos without having to sign up. User of this application is able to add, edit, and remove their Todos.  
 
 
-#Technologies/Frameworks used
+#Technologies and frameworks used
 
 HTML5
 CSS
@@ -26,7 +26,5 @@ MongoDB
 - Link to Heroku
 
 - Link to github repository
-
-- Link to user Story
 
 - Link to wireframe: https://www.draw.io/#G0By2Z2MfeQ8w0LWV1aVpZdU5HS2M
