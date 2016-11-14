@@ -25,6 +25,6 @@ MongoDB
 
 - Link to Heroku
 
-- Link to github repository
+- Link to github repository: https://github.com/sanazjamloo/todo-list
 
 - Link to wireframe: https://www.draw.io/#G0By2Z2MfeQ8w0LWV1aVpZdU5HS2M
