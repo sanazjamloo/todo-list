@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanazjamloo/todo-list"
+  },
   "keywords": [],
   "author": "Sanaz Jamloo 2016",
   "license": "ISC",
@@ -15,6 +19,9 @@
     "method-override": "^2.3.6",
     "mongoose": "^4.6.7",
     "morgan": "^1.7.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "engines": {
+      "node": "v6.7.0"
+    }
   }
 }
