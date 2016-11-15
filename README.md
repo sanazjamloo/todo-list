@@ -23,7 +23,7 @@ MongoDB
 - Authorization and authentication has not been included in this application.
 - Lastly, after all the debugging, the application was deployed to Heroku.
 
-- Link to Heroku
+- Link to Heroku: https://aqueous-hollows-52864.herokuapp.com
 
 - Link to github repository: https://github.com/sanazjamloo/todo-list
 
