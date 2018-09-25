@@ -1,27 +1,22 @@
-# Todo List
-
-Full CRUD with Angular JS
-
 # About the Project
 
-Don't Forget To is a small MEAN stack Todo application with no authorization and authentication feature. A user can start listing their Todos without having to sign up. User of this application is able to add, edit, and remove their Todos.  
-
+Don't Forget To is a Todo List application made with MEAN stack with no authorization and authentication feature. A user can start listing their Todos without having to sign up. In this application, full CRUD features has been achieved with Angular JS so the user of this application can easily add, edit, and remove Todos to their list.  
 
 # Technologies and Frameworks Used
 
 HTML5
 CSS
 JavaScript
-AngularJS as front-end
+Angular JS for front-end
 Node.js
-Express.js as back-end
+Express.js for back-end
 MongoDB
 
 # Approach Taken
 
 - I started by drawing out  a wireframe for this application using draw.io.
-- I made a planning board using Trello to keep track of the progress of the project.
-- I created models( in this project I only had one model), views, and controllers for the app. Full CRUD was achieved using AngularJS.
+- I made a planning board using Trello to keep track of the project progress.
+- I created data model(in this case there is only one model), views, and controllers for the application. Full CRUD was achieved using AngularJS.
 - Authorization and authentication has not been included in this application.
 - Lastly, after all the debugging, the application was deployed to Heroku.
 
