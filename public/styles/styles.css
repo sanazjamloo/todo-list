@@ -1,9 +1,18 @@
 body {
-  /*background-image:url('https://imgur.com/a/xYK3qfw');*/
+  background-image:url("./paper.jpg");
   background-repeat:repeat-y;
   background-size: cover;
   font-family: 'Amatic SC', cursive;
   color: #3c91da;
+}
+
+img {
+  min-height: 100%;
+  /*height: auto;*/
+  min-width: 1024px;
+  box-shadow:  10px 10px 10px 10px #888;
+  margin-top: 1%;
+  width: 100%;
 }
 
 .header {
