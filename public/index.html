@@ -45,9 +45,9 @@
         <label for="done">done?</label>
         <input type="checkbox" ng-model="newTodo.done" value="true" checked>
       </div>
-      <button  class="btn btn-primary btn-sm" id="add-todo" type="submit">Add Todo!</button>
+      <button  class="btn btn-primary btn-sm" id="add-todo" type="submit">Add</button>
     </form>
-    <button  class="btn btn-primary btn-sm" ng-click="main.reset(newTodo)">reset</button>
+    <button  class="btn btn-primary btn-sm" ng-click="main.reset(newTodo)">Clear</button>
   </div>
 
   <div ng-show="main.isEditing" class="edit-form">
@@ -60,7 +60,7 @@
         <label for="done">done?</label>
         <input type="checkbox" ng-model="main.editedTodo.done" value="true" checked>
       </div>
-      <button  class="btn btn-primary btn-sm" type="submit">Edit Todo!</button>
+      <button  class="btn btn-primary btn-sm" type="submit">Update</button>
      </form>
    </div>
  </div>
