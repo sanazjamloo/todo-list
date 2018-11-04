@@ -1,3 +1,4 @@
+//import require.js libraries
 var express        = require('express');
 var path           = require('path');
 var mongoose       = require('mongoose');
@@ -12,7 +13,9 @@ var mongoURI = 'mongodb://localhost/todos'
 
 var app = express();
 app.listen(process.env.PORT || 3000);
+  console.log(' *********************************');
   console.log(' App is listening to the port 3000');
+  console.log(' *********************************');
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
