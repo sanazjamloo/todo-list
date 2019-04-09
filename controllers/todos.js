@@ -4,6 +4,7 @@ var router = express.Router();
 var Todo = require('../models/todo.js');
 
 
+// get all Todos
 router.get('/', function(req, res){
   var query = Todo.find({});
   query.then(function(todos) {
@@ -15,7 +16,7 @@ router.get('/', function(req, res){
     res.json(500, `ERROR: ${err}`)
   })
 });
-
+// get one Todo by id
 router.get('/:todoId', function(req, res){
   Todo.findOne({_id: req.params.todoId})
     .then(function(todo){
@@ -40,7 +41,8 @@ router.post('/', function(req, res){
     newTodo = todo;
   })
   .then(function(){
-    return Todo.find({}).exec();
+    return Todo.find({}).exec(); // The exec() method of the RegExp object is
+    //used to execute the search for a match in the specified string.
   })
   .then(function(todos) {
     console.log('All Todos', todos)

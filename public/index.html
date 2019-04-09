@@ -20,7 +20,8 @@
         <div class="todos">
         <div class="todo" ng-repeat="todo in main.todos">
           <div>
-            <p>Todo: {{todo.description}}</p>
+            <p>Todo: {{todo.description}}</p> <!-- this is called interpolation which is to ask Angular to render that particular component property inside the double curlies-->
+
             <p>Done?: {{todo.done}}</p>
             <p>Created at: {{todo.createdAt | date:'short' }}</p>
           <div class="nav">
