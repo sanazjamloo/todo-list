@@ -16,7 +16,9 @@
   <div class="container">
   <body ng-app="todo">
     <div ng-controller="MainCtrl as main">
-      <h1 class="header">Don't forget to:</h1>
+      <div class="header">
+      <h1>Don't forget to:</h1>
+    </div> <!-- end header-->
         <div class="todos">
         <div class="todo" ng-repeat="todo in main.todos">
           <div>
@@ -65,6 +67,6 @@
      </form>
    </div>
  </div>
-</div>
+</div> <!-- end container class-->
     </body>
 </html>

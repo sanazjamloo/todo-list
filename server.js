@@ -10,6 +10,13 @@ var mongoURI       = process.env.MONGODB_URI || 'mongodb://localhost/todos'
 mongoose.connect(mongoURI);
 var mongoURI = 'mongodb://localhost/todos'
 
+var StatsD = require('node-dogstatsd').StatsD;
+var dogstatsd = new StatsD();
+
+// Increment a counter.
+dogstatsd.increment('page.views')
+
+
 
 var app = express();
 app.listen(process.env.PORT || 3000);

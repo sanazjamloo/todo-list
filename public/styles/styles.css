@@ -8,7 +8,6 @@ body {
 
 img {
   min-height: 100%;
-  /*height: auto;*/
   min-width: 1024px;
   box-shadow:  10px 10px 10px 10px #888;
   margin-top: 1%;
@@ -16,16 +15,21 @@ img {
 }
 
 .header {
-  margin-top: 0%;
   margin-bottom: 7%;
-  padding: 3%;
+  padding: 1%;
   text-align: center;
+  background-color: #97A676;
+  border-radius: 20px;
+  border: 5px solid #5D7044;
+  width: 148%;
+  margin-left: -24%;
 }
 
+
 h1 {
-  color: #2d17cafa;
+  color: #FFF9D9;
   font-size: 6em;
-  text-shadow: 2px 2px #555;
+  text-shadow: 2px 2px #5D7044;
 }
 
 .todos {
@@ -38,7 +42,7 @@ h1 {
 
 .todo {
   margin-bottom: 5%;
-  color: #0418bd;
+  color: #403e3e;
   font-size: 2.5em;
   font-weight: 600;
   line-height: 2em;
@@ -57,10 +61,10 @@ p {
 
 .btn-primary {
   color: #fff;
-  background-color: #4de6ca;
+  background-color: #FFD7D6;
   border-color: #5cb85c;
   margin-bottom: -1%;
-  background-image: linear-gradient(to bottom,#05f3b1 0,#67abe6 100%);
+  background-image: linear-gradient(to bottom,#FFD7D6 0,#FFA7A6 100%);
 }
 
 .edit-form {
@@ -70,7 +74,7 @@ p {
 
 
 #edit-button {
-  background-color: #4de6ca;
+  background-color: #FFD7D6;
 }
 
 /*Skeleton*/
