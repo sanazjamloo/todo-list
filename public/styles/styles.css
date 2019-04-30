@@ -73,9 +73,11 @@ p {
 }
 
 
-#edit-button {
+#edit-button, #delete-button, #add-button, #add, #clear, #update {
   background-color: #FFD7D6;
 }
+
+
 
 /*Skeleton*/
 label {
@@ -103,7 +105,6 @@ button {
   height: 38px;
   padding: 0 30px;
   text-align: center;
-  color: #555;
   font-size: 11px;
   font-weight: 600;
   line-height: 38px;
