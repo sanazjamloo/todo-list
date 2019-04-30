@@ -67,14 +67,6 @@ p {
   background-image: linear-gradient(to bottom,#FFD7D6 0,#FFA7A6 100%);
 }
 
-.btn btn-primary btn-sm {
-  background-image: linear-gradient(to bottom,#FFD7D6 0,#FFA7A6 100%);
-}
-
-#add-todo {
-  background-image: linear-gradient(to bottom,#FFD7D6 0,#FFA7A6 100%);
-}
-
 .edit-form {
   margin-bottom: -14%;
   margin-top: 7%;
